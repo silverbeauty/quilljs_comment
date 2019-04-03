@@ -1,0 +1,66 @@
+@import 'core/_variables';
+
+.commentText {
+	border: none;
+	display: block;
+	resize: none;
+}
+.commentText:focus {
+	outline: none;
+}
+.inline-comment-bottom {
+	margin-top: 15px;
+	text-align: right;
+}
+.annotation {
+	background: #a5caf2;
+}
+
+.author {
+	width: 500px;
+	margin-left: -22px;
+	margin-right: -22px;
+	margin-top: -24px;
+}
+.author-form-group{
+	margin-top: -30px;
+	margin-bottom: -40px;
+}
+.editor{
+	width: 400px;
+	margin-left: -22px;
+	margin-right: -22px;
+}
+.editor-form-group{
+	margin-top: -40px;
+	margin-bottom: -40px;
+}
+.commentText{
+    border: none;
+    display: block;
+    resize: none;
+}
+.commentText:focus{
+  outline: none;
+}
+.inline-comment-bottom{
+  margin-top: 15px;
+  text-align: right;
+}
+#quill-editor{
+  font-size: 16px;
+}
+.jumbotron{
+  margin: auto;
+}
+.container{
+  margin: auto;
+}
+
+
+
+
+    
+
+
+
