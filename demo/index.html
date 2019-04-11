@@ -2,12 +2,13 @@
     <head>
         <meta charset="utf-8">
         <link href="https://cdn.quilljs.com/1.2.2/quill.snow.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="../src/quill-inline-comment.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../dist/quill-inline-comment.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
+        <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?branch=experimental&callback=GetMap' async defer></script>
     </head>
     <body>
         <div class="container" style="position:relative;">
@@ -27,8 +28,7 @@
         </div>
         <!-- <script src="../node_modules/quill/dist/quill.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/quill/1.2.4/quill.js"></script>
-        <script src="../src/module-inline-comment.js"></script>
-        <!--<script src="../dist/quill-inline-comment.js"></script>-->
+        <script src= "../dist/quill-inline-comment.js"></script>
         <script type="text/javascript">
           var toolbarOptions = {
             container: [
@@ -45,17 +45,17 @@
               [{ 'align': [] }],
               ['clean'],
               ['link', 'image', 'video'],
-              [{'comment':{
-                creator_id : 2334,
-                  creator_name : "John Doe",
-                  creator_email : "john@doe.com",
+              ['comment'],
+              ],
+              comment: [{
+                  create_id : 2334,
+                  create_name : "John Doe",
+                  create_email : "john@doe.com",
                   comment: "a comment",
-                  suggestion : "interesting topic",  
-              }}]
+                  suggestion : "interesting topic", 
+                  privilege : 'editor'
+              }
             ],
-            handlers: {'comment': function() {
-                
-            }}
           }
 
           var quill = new Quill('#quill-editor', {

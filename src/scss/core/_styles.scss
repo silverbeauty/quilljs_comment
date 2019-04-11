@@ -20,20 +20,17 @@
 	width: 500px;
 	margin-left: -22px;
 	margin-right: -22px;
-	margin-top: -24px;
+	margin-top: -50px;
 }
 .author-form-group{
-	margin-top: -30px;
-	margin-bottom: -40px;
+	margin-top: 15px;
+	margin-bottom: -20px;
 }
 .editor{
-	width: 400px;
-	margin-left: -22px;
-	margin-right: -22px;
+	max-width: 400px;
 }
 .editor-form-group{
-	margin-top: -40px;
-	margin-bottom: -40px;
+	margin: 0px;
 }
 .commentText{
     border: none;
@@ -51,16 +48,37 @@
   font-size: 16px;
 }
 .jumbotron{
-  margin: auto;
+	margin: auto;
+	padding: 25px;	
 }
 .container{
-  margin: auto;
+	margin: auto;
+	padding: 0px;
 }
-
+.inline-comment{
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px #ddd;
+	color: #444;
+	white-space: nowrap;
+}
+.commentText{
+border: none;
+display: block;
+resize: none;
+}
+.commentText:focus{
+outline: none;
+}
+.inline-comment-bottom{
+margin-top: 15px;
+text-align: right;
+}
+#quill-editor{
+font-size: 16px;
+}
 
 
 
     
-
-
 
